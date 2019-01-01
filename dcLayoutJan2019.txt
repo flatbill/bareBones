@@ -1,0 +1,42 @@
+----------------------------------
+----------------------------------
+=========== =========== ==========
+ttttttttttt ttttttttttt tttttttttt
+cc          pg0
+cc          pg msg
+cc          pg row
+cc          pg row
+cc          pg row
+
+header a  dacoSpaHeader1
+  header aa title upper left  dacoSpaheader2
+  header bb message area middle
+  header cc item area right  itemSearch
+  
+ header b xli-div  full width
+  header ba import area  import label, import button
+  
+ main grid area a
+  content column
+  content 
+  
+main grid area b
+  area ba 
+    product grid title
+	product grid drop area 0
+	product grid help msg
+  area bb
+    product grid 
+	  pg rows
+	    pg slots
+  
+main grid area c  
+  area ca
+    format info title
+    format info help msg
+  area cb
+    format list
+	format detail
+	item layer format
+	text 
+	mask

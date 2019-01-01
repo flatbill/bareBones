@@ -1,0 +1,81 @@
+.cssGridContainer1 {
+	display: grid;
+	height: 100%;
+	grid-template-rows: 1fr 1fr 9fr ;
+	grid-column-gap: 2px;
+	grid-template-areas:
+	    "gt1 gt1 gt1"
+		"gt2 gt2 gt2"
+		"m1  m2  m3"
+		;
+}
+
+.n1 { grid-area: gt1; }
+.n2 { grid-area: gt2; }
+.m1 { grid-area: m1; }
+.m2 { grid-area: m2; }
+.m3 { grid-area: m3; }
+
+
+
+/* Initial styles */
+body, html {
+	height: 100%;
+	margin: 0;
+	width: 100%;
+}
+
+
+.n1, .n2, .m1, .m2, .m3 {
+	color: #fff;
+	/* font-weight: 200; */
+	font-size: 1.2rem;
+	text-align: left;
+	/* padding: 1vw 0; */
+	/* margin: 1vw; */
+	text-indent:  1vw;
+}
+
+  /**
+  *
+  * Define toggled state
+  *
+**/
+.cssGridContainer1.-toggled {
+	grid-template-rows:  1fr 0fr 9fr ;
+  }
+  
+  /* .grid.-toggled .item2 {
+	visibility: hidden;
+  } */
+
+.cl0{background-color: #00aba9;}
+.cl1{background-color: #001111;}
+.cl2{background-color: #003d3c;}
+.cl3{background-color: #006968;}
+.cl4{background-color: #009593;}
+.cl5{background-color: #20b5b4;}
+.cl6{background-color: #62cbca;}
+.cl7{background-color: #a4e1e0;}
+
+ /* cool code pen for color pallet lists   */
+ /* https://codepen.io/afranceschetti/pen/zNWeVg   */
+ /* she shows a set of color codes in a row. */
+ /* copy those color codes like so: */
+ /* #00aba9 #001111 #003d3c #006968 #009593 #20b5b4 #62cbca #a4e1e0  */
+ /* cl0 is the base color. in this case, teal-ish. */
+ /* cl1 is near black. */
+ /* cl2-cl7 are dark-to-light, with base color cl0 somewhere in the middle. */
+ /* then paste those color codes into the cl0-cl7 classes above. */
+
+/* another pallete example: */
+/* #f0a30a #181001 #563a04 #936406 #d18e09 #f2ae29 #f6c668 #fadea8 */
+/* .cl0{background-color: #f0a30a;}
+.cl1{background-color: #181001;}
+.cl2{background-color: #563a04;}
+.cl3{background-color: #936406;}
+.cl4{background-color: #d18e09;}
+.cl5{background-color: #f2ae29;}
+.cl6{background-color: #f6c668;}
+.cl7{background-color: #fadea8;} */
+

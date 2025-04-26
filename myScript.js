@@ -2,7 +2,7 @@
   function fun1() {
     document.querySelector('.cssGridContainer1').classList.toggle("-toggled");
   }
- function fun2() {
+  async function fun2() {
   let myUrl = 'https://www.flytechfree.com/.netlify/functions/getEnvVars'
   let response =   await fetch(myUrl) // magic double-await, promise / result
   let resObj   =   await response.json()

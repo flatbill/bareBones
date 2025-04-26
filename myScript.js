@@ -3,5 +3,6 @@
     document.querySelector('.cssGridContainer1').classList.toggle("-toggled");
   }
  function fun2() {
-   alert('6')
+   alert('process env:is:')
+   console.log(process.env)
   }

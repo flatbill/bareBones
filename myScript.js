@@ -3,6 +3,10 @@
     document.querySelector('.cssGridContainer1').classList.toggle("-toggled");
   }
  function fun2() {
-   alert('process env:is:')
-   console.log(process.env)
+  let myUrl = 'https://www.flytechfree.com/.netlify/functions/getEnvVars'
+  let response =   await fetch(myUrl) // magic double-await, promise / result
+  let resObj   =   await response.json()
+  // resObj is like: {getWhichDb: 'turso'}
+  console.log(Date.now()/10000,'12 resObj from getEnvVars.ts getWhichDb:')
+  console.log(resObj)
   }
